@@ -1,9 +1,9 @@
 package com.example.RitikGitHub.game;
 
 public class GameRunner {
-	private MarioGame game;
+	private GamingConsole game;
 
-	public GameRunner(MarioGame game) {
+	public GameRunner(GamingConsole game) {
 		this.game = game;
 		// TODO Auto-generated constructor stub
 	}
