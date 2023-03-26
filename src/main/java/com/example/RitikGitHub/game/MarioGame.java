@@ -1,9 +1,9 @@
 package com.example.RitikGitHub.game;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
-@Primary
-@Component
+//import org.springframework.context.annotation.Primary;
+//import org.springframework.stereotype.Component;
+////@Primary
+////@Component
 public class MarioGame implements GamingConsole {
 	public void up() {
 		System.out.println("Jump");
@@ -17,5 +17,5 @@ public class MarioGame implements GamingConsole {
 	public void right() {
 		System.out.println("Slide");
 	}
-
+	
 }

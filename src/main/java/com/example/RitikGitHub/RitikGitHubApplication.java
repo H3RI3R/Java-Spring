@@ -4,10 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.example.RitikGitHub.enterprise.web.MyWebController;
 import com.example.RitikGitHub.game.GameRunner;
-import com.example.RitikGitHub.game.GamingConsole;
-import com.example.RitikGitHub.game.MarioGame;
-import com.example.RitikGitHub.game.SuperContraGame;
 
 @SpringBootApplication
 public class RitikGitHubApplication {
@@ -17,9 +15,11 @@ public class RitikGitHubApplication {
 //		MarioGame game = new MarioGame();
 //		GamingConsole game = new SuperContraGame();
 //		GameRunner runner = new GameRunner(game);
+				
 		GameRunner runner = context.getBean(GameRunner.class);
 		runner.run();
-		
+		MyWebController controller =context.getBean(MyWebController.class);
+		System.out.println(controller.returnValueFromBusinessService());
 	}
 
 }
